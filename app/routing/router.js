@@ -16,7 +16,7 @@ router.post('/updatePassword',passportConfig.estaAutenticado, users.updatePasswo
 
 router.post('/signup',users.postSignup);
 router.get('/login',passport.authenticate('google',{ scope: ['profile','email']}));
-router.get('/login/google/callback', passport.authenticate('google', { successRedirect: 'http://proyecto17.dis.eafit.edu.co',failureRedirect: 'http://proyecto17.dis.eafit.edu.co'}));
+router.get('/login/google/callback', passport.authenticate('google', { successRedirect: 'http://localhost/test1/',failureRedirect: 'http://localhost/test1/'}));
 router.get('/logout',passportConfig.estaAutenticado, users.logout);
 router.get('/userInfo', passportConfig.estaAutenticado, function (req,res) {
   res.json({username: req.user.username, _id: req.user._id});
