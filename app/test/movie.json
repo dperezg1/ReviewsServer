@@ -1,0 +1,17 @@
+{
+  "title": "Harry popote",
+  "year": "2008",
+  "genre": "Adventure",
+  "size": "2000",
+  "director": "dhoyoso",
+  "imageUrl":       "http://contenidos.enter.co/custom/uploads/2017/06/full-harry-potter-and-the-philosopher-stone-screenshot-and-the-philosopher-stone-8c334c98cf558bc4af86b1da6da63fb3-large-1260039-300x250.jpg",
+  "owner_id": "597ac5a42baec8175c9519a6",
+  "visibility": "public",
+  "shared_with":[{
+    "username": "emonto15"
+  },
+    {
+      "username": "elmerre"
+    }
+  ]
+}
