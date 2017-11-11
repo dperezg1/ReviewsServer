@@ -16,9 +16,9 @@ passport.deserializeUser(function (id,done) {
   })
 })
 passport.use(new GoogleStrategy({
-    clientID:  "894365078349-b282nb278osvhnktku33s3ovrm247jks.apps.googleusercontent.com",
-    clientSecret: "K9WosmWdumb90PyjFKKaWa2b",
-    callbackURL: 'http://proyecto17api.dis.eafit.edu.co/login/google/callback'
+    clientID:  "894365078349-cgcg4c2f5hvlcpisroo8c3tn5dt3aogb.apps.googleusercontent.com",
+    clientSecret: "-OIYc3BaTRlqz50tvf9rxydi",
+    callbackURL: 'http://localhost/login/google/callback'
   },
   function(accessToken, refreshToken, profile, cb) {
     process.nextTick(function(){
