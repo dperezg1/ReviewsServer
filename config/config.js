@@ -6,28 +6,28 @@ var config = {
   development: {
     root: rootPath,
     app: {
-      name: 'moviesServer'
+      name: 'reviewsServer'
     },
     port: process.env.PORT || 3000,
-    db: 'mongodb://localhost/moviesServer-development'
+    db: 'mongodb://localhost/reviewsServer-development'
   },
 
   test: {
     root: rootPath,
     app: {
-      name: 'moviesServer'
+      name: 'reviewsServer'
     },
     port: process.env.PORT || 3000,
-    db: 'mongodb://localhost/moviesServer-test'
+    db: 'mongodb://localhost/reviewsServer-test'
   },
 
   production: {
     root: rootPath,
     app: {
-      name: 'moviesServer'
+      name: 'reviewsServer'
     },
     port: process.env.PORT || 3000,
-    db: 'mongodb://localhost/moviesServer-production'
+    db: 'mongodb://localhost/reviewsServer-production'
   }
 };
 

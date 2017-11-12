@@ -1,0 +1,69 @@
+<% include header %>
+<h2>Create a new Promo!!</h2>
+<form action="createPromo" method="post" style="display: inline">
+    <div>
+        <label>Product Name:</label>
+        <input name="product">
+    </div>
+    <br/>
+    <div>
+        <label>Category:</label>
+        <select name="category">
+            <option value="Clothes">Clothes</option>
+            <option value="Accesories">Accesories</option>
+            <option value="Cars">Cars</option>
+            <option value="Motorcycles">Motorcycles</option>
+            <option value="Shoes">Shoes</option>
+            <option value="Make up">Make up</option>
+            <option value="Technology">Technology</option>
+            <option value="Watches">Watches</option>
+
+        </select>
+    </div>
+    <br/>
+    <div>
+        <label>Brand:</label>
+        <select name="brand">
+            <option value="Nike">Nike</option>
+            <option value="Adidas">Adidas</option>
+            <option value="Puma">Puma</option>
+            <option value="Guess">Guess</option>
+            <option value="Lacoste">Lacoste</option>
+            <option value="Victoria's Secret">Victoria's Secret</option>
+            <option value="Zara">Zara</option>
+            <option value="Microsoft">Microsoft</option>
+            <option value="Stradivarius">Stradivarius</option>
+            <option value="Asus">Asus</option>
+            <option value="HP">HP</option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedes Benz">Mercedes Benz</option>
+        </select>
+    </div>
+    <br/>
+    <div>
+        <label>details:</label>
+        <input name="details">
+    </div>
+    <br/>
+    <div>
+        <label>Expiring Date:</label>
+        <input type="date" name="date">
+    </div>
+    <br/>
+    <div>
+        <label>Promo Link:</label>
+        <input name="link">
+    </div>
+    <br/>
+    <div>
+        <label>Image (URL):</label>
+        <input name="image">
+    </div>
+    <br/>
+    <div>
+        <label>Product Code:</label>
+        <input name="code">
+    </div>
+    <input type="submit">
+</form>
+<% include footer %>

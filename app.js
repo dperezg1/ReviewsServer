@@ -12,6 +12,8 @@ var MongoStore = require('connect-mongo')(session);
 
 mongoose.connect(config.db);
 
+
+
 var db = mongoose.connection;
 
 db.on('error', function () {
@@ -25,7 +27,6 @@ models.forEach(function (model) {
 });
 
 var originsWhitelist = [
-  'http://proyecto17.dis.eafit.edu.co',
   'http://localhost'    //this is my front-end url for development
 
 ];
@@ -56,6 +57,14 @@ app.use(session({
     autoReconnect: true
   })
 }));
+var promo = require('./app/controllers/promo.js')
+
+setInterval(function () {
+
+    promo.deleteExpirePromos();
+
+    console.log("Diego la loca")
+},6e+4*60*24)
 
 app.use(passport.initialize());
 app.use(passport.session());
