@@ -50,6 +50,14 @@ module.exports = {
         cursor.on('data',function (promo) {
             Promo.findByIdAndRemove(promo._id,function (err) {})
         })
+    },
+    getAllPromos: function (req, res) {
+        Promo.find({}, function (err, promos) {
+            if (!err) {
+                res.status(200).send(promos);
+            } else {
+                res.status(500).send(err);
+            }
+        });
     }
-
-}
+};

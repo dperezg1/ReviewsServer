@@ -34,5 +34,6 @@ router.get('/createPromo',promo.getView);
 router.post('/createPromo', promo.createPromo);
 router.post('/searchPromo', promo.searchPromo);
 router.post('/searchPromoByCategory', promo.searchPromoByCategory);
+router.get('/promos', promo.getAllPromos);
 
 
